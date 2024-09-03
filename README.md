@@ -1,4 +1,4 @@
-# DSE1101 Final Project
+# Predicting HDB Resale Prices
 The dataset that I have selected is HDB resale prices 2021. This data is taken from open sources (Data.gov.sg). This dataset is of personal interest to me as my mom works at HDB so this was an excellent opportunity for me to play with data related to her workplace. Additionally, I found it fascinating how I can use the concepts that I learned in DSE1101 and apply them to real-world data. Predicting resale prices involves building predictive models, which is a fundamental skill in data science. The models that I used are Decision Trees, Multiple Linear Regression, and K-nearest Neighbours (KNN). Since this is a regression problem, the models are evaluated based on the out-of-sample mean squared error (MSE) using a test set.
 
 ## Data Preparation:
