@@ -1,2 +1,14 @@
-# DSE1101
+# DSE1101 Final Project
 In my final project for DSE1101, Introductory Data Science for Economics, I applied the AI/ML techniques I had learned in this course to analyze and build predictive models using real-world HDB resale price data.
+
+The dataset that I have selected is HDB resale prices 2021. This data is taken from open sources (Data.gov.sg). This dataset is of personal interest to me as my mom works at HDB so this was an excellent opportunity for me to play with data related to her workplace. Additionally, I found it fascinating how I can use the concepts that I learned in DSE1101 and apply them to real-world data. Predicting resale prices involves building predictive models, which is a fundamental skill in data science. The models that I used are Decision Trees, Multiple Linear Regression, and K-nearest Neighbours (KNN). Since this is a regression problem, the models are evaluated based on the out-of-sample mean squared error (MSE) using a test set.
+
+## Data Preparation:
+I checked for missing values and handled them by omitting the respective rows. The resale prices are scaled by dividing them by 1000 for ease of interpretation. I performed a 50/50 train-test split, with 3000 observations in the training set and the rest in the testing set. I also set a seed for reproducibility. 
+
+## Variable Selection:
+I first deduced a few variables that would be important in my study. The variable that I felt was the most important is the “floor_area_sqm” variable. This is a no-brainer as floor area is the first thing that shows up in every advertising brochure/website pertaining to a resale flat. It is so crucial that many resale websites such as propertyguru.com.sg have indicated a dollar-per-floor area metric, for buyers to judge the value of the house. Based on my understanding, with a larger floor area, homeowners would have a larger area to play around with, in terms of interior design and furniture and therefore, house valuation would be higher. Based on my economics knowledge, I also considered “Remaining_lease” and “Dist_nearest_station” to be crucial as well. When deciding which HDB to buy, rational buyers would consider the opportunity cost in making the decision. They would prefer to choose flats closer to MRT stations to cut down the implicit cost incurred which is the time taken to walk to the nearest MRT station. Similarly, they would choose HDBs with a higher remaining lease value so that they can cut down the time taken to search for a new flat.
+
+Additionally, I used Decision Trees for variable selection. It is a non-parametric method which can perform regression tasks. I choose trees for many reasons. It is computationally efficient, has automatic interaction detection, handles both categorical and numeric X well and performs variable selection.
+
+### Model Fitting and Evaluation of my results can be found in my R code and Project PDF document.
